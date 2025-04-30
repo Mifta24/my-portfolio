@@ -103,7 +103,7 @@ export default {
           description:
             "A full-stack e-commerce platform with product catalog, user authentication, shopping cart, and payment integration.",
           technologies: ["Vue.js", "Laravel", "MySQL", "Stripe API"],
-          image: "project1.jpg",
+          image: "logo.png",
           demoUrl: "https://example.com/demo1",
           codeUrl: "https://github.com/yourusername/project1",
         },
@@ -114,7 +114,7 @@ export default {
           description:
             "A responsive portfolio website to showcase professional work and skills.",
           technologies: ["Vue.js", "SCSS", "Animation"],
-          image: "project2.jpg",
+          image: "logo.png",
           demoUrl: "https://example.com/demo2",
           codeUrl: "https://github.com/yourusername/project2",
         },
@@ -125,7 +125,7 @@ export default {
           description:
             "A task management application with drag-and-drop functionality, user authentication, and real-time updates.",
           technologies: ["Vue.js", "Firebase", "Vuetify"],
-          image: "project3.jpg",
+          image: "logo.png",
           demoUrl: "https://example.com/demo3",
           codeUrl: "https://github.com/yourusername/project3",
         },
@@ -136,7 +136,7 @@ export default {
           description:
             "A restaurant booking system with reservation management, table allocation, and email notifications.",
           technologies: ["Vue.js", "Node.js", "Express", "MongoDB"],
-          image: "project4.jpg",
+          image: "logo.png",
           demoUrl: "https://example.com/demo4",
           codeUrl: "https://github.com/yourusername/project4",
         },
@@ -147,7 +147,7 @@ export default {
           description:
             "A weather dashboard that displays current weather conditions and forecasts using third-party APIs.",
           technologies: ["HTML", "CSS", "JavaScript", "Weather API"],
-          image: "project5.jpg",
+          image: "logo.png",
           demoUrl: "https://example.com/demo5",
           codeUrl: "https://github.com/yourusername/project5",
         },
@@ -158,7 +158,7 @@ export default {
           description:
             "A modern company website with animated sections and responsive design.",
           technologies: ["HTML", "CSS", "JavaScript", "GSAP"],
-          image: "project6.jpg",
+          image: "logo.png",
           demoUrl: "https://example.com/demo6",
           codeUrl: "https://github.com/yourusername/project6",
         },

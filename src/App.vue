@@ -3,7 +3,7 @@
     <!-- Header/Navigation -->
     <header>
       <div class="logo">
-        <router-link to="/">Miftahudin Aldi Saputra</router-link>
+        <router-link to="/">My Portfolio</router-link>
       </div>
       <nav>
         <router-link to="/" class="nav-link">Home</router-link>
@@ -94,7 +94,7 @@ header {
 .logo a {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #546ec5;
+  color: #3498db;
   text-decoration: none;
 }
 

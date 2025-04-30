@@ -5,10 +5,16 @@
         <div class="hero-text">
           <h1>Miftahudin Aldi Saputra</h1>
           <h2>Web Developer & Designer</h2>
-          <p>Building elegant, responsive and high-performance web applications</p>
+          <p>
+            Building elegant, responsive and high-performance web applications
+          </p>
           <div class="cta-buttons">
-            <router-link to="/projects" class="btn btn-primary">View My Work</router-link>
-            <router-link to="/contact" class="btn btn-secondary">Contact Me</router-link>
+            <router-link to="/projects" class="btn btn-primary"
+              >View My Work</router-link
+            >
+            <router-link to="/contact" class="btn btn-secondary"
+              >Contact Me</router-link
+            >
           </div>
         </div>
         <div class="hero-image">
@@ -21,17 +27,25 @@
       <div class="highlight-card">
         <i class="fas fa-code"></i>
         <h3>Web Development</h3>
-        <p>Creating modern and responsive websites with cutting-edge technologies.</p>
+        <p>
+          Creating modern and responsive websites with cutting-edge
+          technologies.
+        </p>
       </div>
       <div class="highlight-card">
         <i class="fas fa-palette"></i>
         <h3>UI/UX Design</h3>
-        <p>Crafting beautiful and intuitive user interfaces for the best user experience.</p>
+        <p>
+          Crafting beautiful and intuitive user interfaces for the best user
+          experience.
+        </p>
       </div>
       <div class="highlight-card">
         <i class="fas fa-mobile-alt"></i>
         <h3>Responsive Design</h3>
-        <p>Ensuring your website looks great on all devices and screen sizes.</p>
+        <p>
+          Ensuring your website looks great on all devices and screen sizes.
+        </p>
       </div>
     </section>
 
@@ -45,7 +59,9 @@
           <div class="project-info">
             <h3>E-Commerce Website</h3>
             <p>A full-stack e-commerce solution with Vue.js and Laravel</p>
-            <router-link to="/projects" class="project-link">View Details</router-link>
+            <router-link to="/projects" class="project-link"
+              >View Details</router-link
+            >
           </div>
         </div>
         <div class="project-card">
@@ -55,12 +71,16 @@
           <div class="project-info">
             <h3>Portfolio Website</h3>
             <p>A responsive portfolio website built with Vue.js</p>
-            <router-link to="/projects" class="project-link">View Details</router-link>
+            <router-link to="/projects" class="project-link"
+              >View Details</router-link
+            >
           </div>
         </div>
       </div>
       <div class="view-all">
-        <router-link to="/projects" class="btn btn-outline">View All Projects</router-link>
+        <router-link to="/projects" class="btn btn-outline"
+          >View All Projects</router-link
+        >
       </div>
     </section>
   </div>
@@ -68,7 +88,7 @@
 
 <script>
 export default {
-  name: "HomeView"
+  name: "HomeView",
 };
 </script>
 
@@ -271,7 +291,7 @@ export default {
 }
 
 .project-link::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
