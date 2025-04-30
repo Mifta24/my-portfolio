@@ -31,11 +31,7 @@
         >
           <i class="fab fa-github"></i>
         </a>
-        <a
-          href="https://linkedin.com/in/yourusername"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="#" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-linkedin"></i>
         </a>
         <a href="mailto:miftafree3@gmail.com">

@@ -38,7 +38,7 @@
               </div>
               <div class="details">
                 <h3>Phone</h3>
-                <p><a href="tel:+1234567890">+123 456 7890</a></p>
+                <p><a href="tel:+1234567890">+62 838-9327-1424</a></p>
               </div>
             </div>
 
@@ -157,7 +157,7 @@
         <h2>Where to Find Me</h2>
         <div class="map-container">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16333679.49937939!2d106.41479020326658!3d-2.3038062565215707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c4c07d7496404b7%3A0xe37b4de71badf485!2sIndonesia!5e0!3m2!1sen!2sid!4v1651142750492!5m2!1sen!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.637956807143!2d106.60548937376329!3d-6.179191893808246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fed8e67cb0ad%3A0x2888b42a70065bd2!2sGlobal%20Institute%20%7C%20Institut%20Teknologi%20dan%20Bisnis%20Bina%20Sarana%20Global!5e0!3m2!1sid!2sid!4v1746026291379!5m2!1sid!2sid"
             width="100%"
             height="450"
             style="border: 0"

@@ -4,9 +4,10 @@
       <div class="hero-content">
         <div class="hero-text">
           <h1>Miftahudin Aldi Saputra</h1>
-          <h2>Web Developer & Designer</h2>
+          <h2>Web Developer & Mobile Developer</h2>
           <p>
             Building elegant, responsive and high-performance web applications
+            and mobile applications using cutting-edge technologies.
           </p>
           <div class="cta-buttons">
             <router-link to="/projects" class="btn btn-primary"
@@ -18,7 +19,7 @@
           </div>
         </div>
         <div class="hero-image">
-          <!-- <img src="../assets/profile.jpg" alt="Miftahudin Aldi Saputra" /> -->
+          <img src="../assets/profile.jpg" alt="Miftahudin Aldi Saputra" />
         </div>
       </div>
     </section>
@@ -54,11 +55,14 @@
       <div class="projects-grid">
         <div class="project-card">
           <div class="project-image">
-            <!-- <img src="../assets/project1.jpg" alt="Project 1" /> -->
+            <img src="../assets/phone_match.jpeg" alt="Project 1" />
           </div>
           <div class="project-info">
-            <h3>E-Commerce Website</h3>
-            <p>A full-stack e-commerce solution with Vue.js and Laravel</p>
+            <h3>Phone Match</h3>
+            <p>
+              Smartphone recommendation system using the TOPSIS method with
+              Tailwind CSS and Laravel Fullstack.
+            </p>
             <router-link to="/projects" class="project-link"
               >View Details</router-link
             >
@@ -66,11 +70,14 @@
         </div>
         <div class="project-card">
           <div class="project-image">
-            <!-- <img src="../assets/project2.jpg" alt="Project 2" /> -->
+            <img src="../assets/Mistify.png" alt="Project 2" />
           </div>
           <div class="project-info">
-            <h3>Portfolio Website</h3>
-            <p>A responsive portfolio website built with Vue.js</p>
+            <h3>Parfume Shop</h3>
+            <p>
+              A perfume store website built using bootstrap and laravel and
+              equipped with a payment gateway
+            </p>
             <router-link to="/projects" class="project-link"
               >View Details</router-link
             >

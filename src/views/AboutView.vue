@@ -12,11 +12,14 @@
     <section class="about-content container">
       <div class="profile-section">
         <div class="profile-image">
-          <!-- <img src="../assets/profile-about.jpg" alt="Miftahudin Aldi Saputra" /> -->
+          <img
+            src="../assets/profile-about.jpg"
+            alt="Miftahudin Aldi Saputra"
+          />
         </div>
         <div class="profile-details">
           <h2>Miftahudin Aldi Saputra</h2>
-          <p class="subtitle">Web Developer & Designer</p>
+          <p class="subtitle">Web Developer & Mobile Developer</p>
           <p class="bio">
             I'm a passionate web developer with a focus on creating clean,
             user-friendly websites and applications. With a strong foundation in
@@ -46,7 +49,10 @@
             </div>
           </div>
           <div class="download-cv">
-            <a href="#" class="btn btn-primary">
+            <a
+              href="https://drive.google.com/file/d/1qhMM2s1td_WX7fHSftMM60xD3fZoe_-t/view?usp=drive_link"
+              class="btn btn-primary"
+            >
               <i class="fas fa-download"></i> Download CV
             </a>
           </div>
@@ -56,7 +62,7 @@
       <div class="experience-section">
         <h2>Experience & Education</h2>
         <div class="timeline">
-          <div class="timeline-item">
+          <!-- <div class="timeline-item">
             <div class="timeline-marker">
               <i class="fas fa-briefcase"></i>
             </div>
@@ -71,25 +77,26 @@
                 experiences.
               </p>
             </div>
-          </div>
+          </div> -->
 
           <div class="timeline-item">
             <div class="timeline-marker">
               <i class="fas fa-graduation-cap"></i>
             </div>
             <div class="timeline-content">
-              <h3>Computer Science Degree</h3>
-              <p class="timeline-date">2018 - 2022</p>
-              <p class="timeline-company">University Name</p>
+              <h3>Software Engineering Degree</h3>
+              <p class="timeline-date">2022 - Present</p>
+              <p class="timeline-company">Global Institute Tangerang</p>
               <p class="timeline-description">
-                Studied computer science with focus on web development,
-                algorithms, and software engineering. Completed various projects
-                that enhanced my technical skills and problem-solving abilities.
+                Pursuing a degree in Software Engineering, focusing on web
+                development, mobile applications, and software design
+                principles. Gaining knowledge in various programming languages
+                and frameworks.
               </p>
             </div>
           </div>
 
-          <div class="timeline-item">
+          <!-- <div class="timeline-item">
             <div class="timeline-marker">
               <i class="fas fa-briefcase"></i>
             </div>
@@ -104,7 +111,7 @@
                 requirements.
               </p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -116,8 +123,8 @@
             <h3>Coding</h3>
           </div>
           <div class="interest-item">
-            <i class="fas fa-book"></i>
-            <h3>Reading</h3>
+            <i class="fas fa-gamepad"></i>
+            <h3>Gaming</h3>
           </div>
           <div class="interest-item">
             <i class="fas fa-music"></i>
