@@ -50,7 +50,7 @@
           </div>
           <div class="download-cv">
             <a
-              href="https://drive.google.com/file/d/1qhMM2s1td_WX7fHSftMM60xD3fZoe_-t/view?usp=drive_link"
+              href="https://drive.google.com/file/d/13dnaha3AngJQkpKRhv26LwTchnNe1gCq/view?usp=sharing"
               class="btn btn-primary"
             >
               <i class="fas fa-download"></i> Download CV

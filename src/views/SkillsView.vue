@@ -215,13 +215,13 @@ export default {
           date: "2024",
           url: "https://drive.google.com/file/d/1GvjYf4EJosLxgqk2kig9oY34Z2FrTFUT/view?usp=sharing",
         },
-        // {
-        //   name: "Laravel Framework",
-        //   icon: "fas fa-certificate",
-        //   issuer: "Laracasts",
-        //   date: "2022",
-        //   url: "#",
-        // },
+        {
+          name: "Teknik Pembuatan Surat, Dokumen dan Presentasi, Pengolahan Data Bisnis serta Visualisasi Grafis dengan Microsoft Office untuk Tenaga Perkantoran Umum (Administrasi Perkantoran)",
+          icon: "fas fa-certificate",
+          issuer: "Course-NET",
+          date: "2023",
+          url: "https://drive.google.com/file/d/1rmpf6bw63qLXP7El4Sc8asGEq-IfPeXI/view?usp=sharing",
+        },
       ],
     };
   },

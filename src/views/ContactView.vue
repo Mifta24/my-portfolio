@@ -63,22 +63,18 @@
               >
                 <i class="fab fa-github"></i>
               </a>
-              <a
-                href="https://linkedin.com/in/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-linkedin"></i>
               </a>
               <a
-                href="https://twitter.com/yourusername"
+                href="https://x.com/MiftaAldi24?t=hkYF19hu2v1wSUtGWoGCOg&s=09"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i class="fab fa-twitter"></i>
               </a>
               <a
-                href="https://instagram.com/yourusername"
+                href="https://www.instagram.com/mifta_xh_ui?utm_source=qr&igsh=OXZyb3pibDJmOXcw"
                 target="_blank"
                 rel="noopener noreferrer"
               >

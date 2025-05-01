@@ -3,7 +3,7 @@
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-![Portfolio Preview](screenshot.png)
+![Portfolio Preview](docs/my-portfolio-miftahudin-aldi-saputras-projects.vercel.app.jpeg)
 
 A modern, responsive portfolio website built with Vue.js to showcase my projects and skills as a web developer.
 
