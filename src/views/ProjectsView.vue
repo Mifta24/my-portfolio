@@ -263,7 +263,7 @@ export default {
           category: "Rest API",
           description:
             "A RESTful API for managing tire data with CRUD operations and authentication.",
-          technologies: ["Laravel", "PostgreSQL", "JSON","PHP"],
+          technologies: ["Laravel", "PostgreSQL", "JSON", "PHP"],
           image: "tire-api.jpeg",
           demoUrl: "https://tire.fts.biz.id/docs/api#/",
           codeUrl: "https://github.com/Mifta24/tires",
