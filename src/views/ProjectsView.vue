@@ -257,6 +257,17 @@ export default {
           demoUrl: "#",
           codeUrl: "https://github.com/Mifta24/master_plans_flutter",
         },
+        {
+          id: 12,
+          title: "Tire Api",
+          category: "Rest API",
+          description:
+            "A RESTful API for managing tire data with CRUD operations and authentication.",
+          technologies: ["Laravel", "PostgreSQL", "JSON","PHP"],
+          image: "tire-api.jpeg",
+          demoUrl: "https://tire.fts.biz.id/docs/api#/",
+          codeUrl: "https://github.com/Mifta24/tires",
+        },
       ],
     };
   },
