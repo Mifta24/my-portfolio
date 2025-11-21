@@ -22,16 +22,7 @@
               <div class="skill-icon">
                 <i :class="skill.icon"></i>
               </div>
-              <div class="skill-info">
-                <h3>{{ skill.name }}</h3>
-                <div class="skill-bar">
-                  <div
-                    class="skill-progress"
-                    :style="{ width: skill.level + '%' }"
-                  ></div>
-                </div>
-                <span class="skill-percentage">{{ skill.level }}%</span>
-              </div>
+              <h3>{{ skill.name }}</h3>
             </div>
           </div>
         </div>
@@ -47,28 +38,35 @@
               <div class="skill-icon">
                 <i :class="skill.icon"></i>
               </div>
-              <div class="skill-info">
-                <h3>{{ skill.name }}</h3>
-                <div class="skill-bar">
-                  <div
-                    class="skill-progress"
-                    :style="{ width: skill.level + '%' }"
-                  ></div>
-                </div>
-                <span class="skill-percentage">{{ skill.level }}%</span>
-              </div>
+              <h3>{{ skill.name }}</h3>
             </div>
           </div>
         </div>
 
         <div class="skill-category">
           <h2><i class="fas fa-tools"></i> Tools & Technologies</h2>
-          <div class="tools-grid">
-            <div class="tool-item" v-for="tool in tools" :key="tool.name">
-              <div class="tool-icon">
+          <div class="skills-grid">
+            <div class="skill-item" v-for="tool in tools" :key="tool.name">
+              <div class="skill-icon">
                 <i :class="tool.icon"></i>
               </div>
               <h3>{{ tool.name }}</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h2><i class="fas fa-file-alt"></i> Office & Productivity</h2>
+          <div class="skills-grid">
+            <div
+              class="skill-item"
+              v-for="office in officeSkills"
+              :key="office.name"
+            >
+              <div class="skill-icon">
+                <i :class="office.icon"></i>
+              </div>
+              <h3>{{ office.name }}</h3>
             </div>
           </div>
         </div>
@@ -144,25 +142,25 @@ export default {
   data() {
     return {
       frontendSkills: [
-        { name: "HTML5", icon: "fab fa-html5", level: 100 },
-        { name: "CSS3", icon: "fab fa-css3-alt", level: 100 },
-        { name: "JavaScript", icon: "fab fa-js", level: 95 },
-        { name: "Vue.js", icon: "fab fa-vuejs", level: 50 },
-        { name: "Tailwind CSS", icon: "devicon-tailwindcss-plain", level: 85 },
-        { name: "Bootstrap", icon: "fab fa-bootstrap", level: 100 },
+        { name: "HTML5", icon: "fab fa-html5" },
+        { name: "CSS3", icon: "fab fa-css3-alt" },
+        { name: "JavaScript", icon: "fab fa-js" },
+        { name: "Vue.js", icon: "fab fa-vuejs" },
+        { name: "Tailwind CSS", icon: "fas fa-wind" },
+        { name: "Bootstrap", icon: "fab fa-bootstrap" },
       ],
       backendSkills: [
-        { name: "PHP", icon: "fab fa-php", level: 100 },
-        { name: "Python", icon: "fab fa-python", level: 70 },
-        { name: "Java", icon: "fab fa-java", level: 60 },
-        { name: "C#", icon: "devicon-csharp-plain", level: 70 },
-        { name: ".NET", icon: "devicon-dotnetcore-plain", level: 60 },
-        { name: "Laravel", icon: "fab fa-laravel", level: 100 },
-        { name: "MySQL", icon: "fas fa-database", level: 100 },
-        { name: "PostgreSQL", icon: "fas fa-database", level: 80 },
-        { name: "SQLite", icon: "fas fa-database", level: 80 },
-        { name: "Supabase", icon: "fas fa-database", level: 80 },
-        { name: "REST APIs", icon: "fas fa-plug", level: 70 },
+        { name: "PHP", icon: "fab fa-php" },
+        { name: "Python", icon: "fab fa-python" },
+        { name: "Java", icon: "fab fa-java" },
+        { name: "C#", icon: "fas fa-hashtag" },
+        { name: ".NET", icon: "fas fa-code" },
+        { name: "Laravel", icon: "fab fa-laravel" },
+        { name: "MySQL", icon: "fas fa-database" },
+        { name: "PostgreSQL", icon: "fas fa-database" },
+        { name: "SQLite", icon: "fas fa-database" },
+        { name: "Supabase", icon: "fas fa-database" },
+        { name: "REST APIs", icon: "fas fa-plug" },
       ],
       tools: [
         { name: "Git", icon: "fab fa-git-alt" },
@@ -173,6 +171,16 @@ export default {
         { name: "NPM", icon: "fab fa-npm" },
         { name: "Postman", icon: "fas fa-paper-plane" },
         { name: "Canva", icon: "fas fa-paint-brush" },
+      ],
+      officeSkills: [
+        { name: "Microsoft Word", icon: "fas fa-file-word" },
+        { name: "Microsoft Excel", icon: "fas fa-file-excel" },
+        { name: "Microsoft PowerPoint", icon: "fas fa-file-powerpoint" },
+        { name: "Microsoft Access", icon: "fas fa-database" },
+        { name: "Microsoft Outlook", icon: "fas fa-envelope" },
+        { name: "Google Docs", icon: "fab fa-google" },
+        { name: "Google Sheets", icon: "fab fa-google" },
+        { name: "Google Slides", icon: "fab fa-google" },
       ],
       softSkills: [
         {
@@ -276,88 +284,39 @@ export default {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-  gap: 2rem;
-}
-
-/* Skill Item */
-.skill-item {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-}
-
-.skill-icon {
-  font-size: 2rem;
-  color: #3498db;
-  margin-right: 1.5rem;
-  width: 40px;
-  text-align: center;
-}
-
-.skill-info {
-  flex: 1;
-}
-
-.skill-info h3 {
-  font-size: 1.2rem;
-  color: #2c3e50;
-  margin-bottom: 0.75rem;
-}
-
-.skill-bar {
-  height: 8px;
-  background-color: #e0e0e0;
-  border-radius: 4px;
-  overflow: hidden;
-  margin-bottom: 0.5rem;
-}
-
-.skill-progress {
-  height: 100%;
-  background-color: #3498db;
-  border-radius: 4px;
-  transition: width 1.5s ease-in-out;
-}
-
-.skill-percentage {
-  font-size: 0.9rem;
-  color: #3498db;
-  font-weight: 600;
-}
-
-/* Tools Section */
-.tools-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 1.5rem;
 }
 
-.tool-item {
+/* Skill Item - Simplified */
+.skill-item {
   background-color: white;
   padding: 1.5rem;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.tool-item:hover {
+.skill-item:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.tool-icon {
+.skill-icon {
   font-size: 2.5rem;
   color: #3498db;
   margin-bottom: 1rem;
 }
 
-.tool-item h3 {
-  font-size: 1.1rem;
+.skill-item h3 {
+  font-size: 1rem;
   color: #2c3e50;
+  margin: 0;
 }
 
 /* Soft Skills Section */
@@ -512,7 +471,7 @@ export default {
 /* Responsive Design */
 @media (max-width: 992px) {
   .skills-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 
   .soft-skills-grid {
@@ -525,16 +484,6 @@ export default {
 }
 
 @media (max-width: 768px) {
-  .skill-item {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .skill-icon {
-    margin-right: 0;
-    margin-bottom: 1rem;
-  }
-
   .soft-skill-item,
   .certification-item {
     flex-direction: column;
@@ -546,15 +495,11 @@ export default {
     margin-right: 0;
     margin-bottom: 1rem;
   }
-
-  .tools-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media (max-width: 576px) {
-  .tools-grid {
-    grid-template-columns: 1fr;
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 </style>

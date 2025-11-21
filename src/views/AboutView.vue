@@ -4,7 +4,7 @@
       <div class="container">
         <h1>About Me</h1>
         <p class="lead">
-          Get to know who I am and what drives me as a developer
+          Get to know who I am and what drives me as a professional
         </p>
       </div>
     </section>
@@ -19,12 +19,14 @@
         </div>
         <div class="profile-details">
           <h2>Miftahudin Aldi Saputra</h2>
-          <p class="subtitle">Web Developer & Mobile Developer</p>
+          <p class="subtitle">IT Professional & Administrative Specialist</p>
           <p class="bio">
-            I'm a passionate web developer with a focus on creating clean,
-            user-friendly websites and applications. With a strong foundation in
-            both front-end and back-end technologies, I enjoy bringing ideas to
-            life through code and design.
+            I'm a dedicated professional with expertise in both technical and
+            administrative domains. With proficiency in web development,
+            database management, and MS Office suite, I combine technical skills
+            with strong organizational abilities to deliver efficient solutions.
+            I'm passionate about leveraging technology to streamline workflows
+            and solve complex problems.
           </p>
           <div class="personal-info">
             <div class="info-item">
@@ -88,10 +90,11 @@
               <p class="timeline-date">2022 - Present</p>
               <p class="timeline-company">Global Institute Tangerang</p>
               <p class="timeline-description">
-                Pursuing a degree in Software Engineering, focusing on web
-                development, mobile applications, and software design
-                principles. Gaining knowledge in various programming languages
-                and frameworks.
+                Pursuing a degree in Software Engineering with a comprehensive
+                curriculum covering web development, mobile applications,
+                database management, and software design. Also developing strong
+                skills in data analysis, office productivity tools, and project
+                management to complement technical expertise.
               </p>
             </div>
           </div>

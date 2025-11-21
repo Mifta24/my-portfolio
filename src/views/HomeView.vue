@@ -4,10 +4,11 @@
       <div class="hero-content">
         <div class="hero-text">
           <h1>Miftahudin Aldi Saputra</h1>
-          <h2>Web Developer & Mobile Developer</h2>
+          <h2>IT Professional & Administrative Specialist</h2>
           <p>
-            Building elegant, responsive and high-performance web applications
-            and mobile applications using cutting-edge technologies.
+            Combining technical expertise with strong administrative skills to
+            deliver efficient solutions in web development, data management, and
+            office productivity.
           </p>
           <div class="cta-buttons">
             <router-link to="/projects" class="btn btn-primary"
@@ -26,26 +27,27 @@
 
     <section class="highlights">
       <div class="highlight-card">
-        <i class="fas fa-code"></i>
-        <h3>Web Development</h3>
+        <i class="fas fa-laptop-code"></i>
+        <h3>Technical Skills</h3>
         <p>
-          Creating modern and responsive websites with cutting-edge
-          technologies.
+          Proficient in web development, database management, IT support, and
+          technical problem-solving.
         </p>
       </div>
       <div class="highlight-card">
-        <i class="fas fa-palette"></i>
-        <h3>UI/UX Design</h3>
+        <i class="fas fa-file-alt"></i>
+        <h3>Administrative Excellence</h3>
         <p>
-          Crafting beautiful and intuitive user interfaces for the best user
-          experience.
+          Expert in MS Office Suite, document management, data entry, and office
+          productivity tools.
         </p>
       </div>
       <div class="highlight-card">
-        <i class="fas fa-mobile-alt"></i>
-        <h3>Responsive Design</h3>
+        <i class="fas fa-chart-line"></i>
+        <h3>Data Analysis</h3>
         <p>
-          Ensuring your website looks great on all devices and screen sizes.
+          Skilled in data processing, spreadsheet analysis, reporting, and data
+          visualization.
         </p>
       </div>
     </section>
