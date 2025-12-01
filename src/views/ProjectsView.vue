@@ -259,6 +259,17 @@ export default {
         },
         {
           id: 12,
+          title: "Library App",
+          category: "Mobile Application",
+          description:
+            "A library app with user authentication, book catalog, and borrowing features.",
+          technologies: ["Flutter", "Firebase", "Cloud Firestore"],
+          image: "my-pengaduan-mockup.png",
+          demoUrl: "#",
+          codeUrl: "https://github.com/Mifta24/perpus-glo",
+        },
+        {
+          id: 13,
           title: "Tire Api",
           category: "Rest API",
           description:
@@ -268,17 +279,43 @@ export default {
           demoUrl: "https://tire.fts.biz.id/docs/api#/",
           codeUrl: "https://github.com/Mifta24/tires",
         },
+        {
+          id: 14,
+          title: "Digital Complaint Web and Api",
+          category: "Web API",
+          description:
+            "A digital complaint system with user authentication, complaint management, and response tracking.",
+          technologies: ["Laravel", "PostgreSQL", "JSON", "PHP"],
+          image: "my-pengaduan.png",
+          demoUrl: "https://my-pengaduan.miftahaldi.my.id",
+          codeUrl: "https://github.com/Mifta24/my-pengaduan",
+        },
+        {
+          id: 15,
+          title: "Coming Soon Project",
+          category: "Coming Soon",
+          description: "Coming Soon Project",
+          technologies: ["Coming Soon"],
+          image:
+            "https://img.freepik.com/premium-photo/coming-soon-gold_168501-370.jpg",
+          demoUrl: "#",
+          codeUrl: "#",
+        },
       ],
     };
   },
   computed: {
     filteredProjects() {
+      let filtered;
       if (this.selectedCategory === "all") {
-        return this.projects;
+        filtered = [...this.projects];
+      } else {
+        filtered = this.projects.filter(
+          (project) => project.category === this.selectedCategory
+        );
       }
-      return this.projects.filter(
-        (project) => project.category === this.selectedCategory
-      );
+      // Acak urutan proyek
+      return this.shuffleArray(filtered);
     },
     paginatedProjects() {
       const start = (this.currentPage - 1) * this.itemsPerPage;
@@ -293,6 +330,15 @@ export default {
     },
   },
   methods: {
+    shuffleArray(array) {
+      // Fisher-Yates shuffle algorithm
+      const shuffled = [...array];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      return shuffled;
+    },
     handleImageError(e) {
       // Fallback untuk gambar yang tidak ditemukan
       e.target.src = "https://via.placeholder.com/450x250?text=Project+Image";
