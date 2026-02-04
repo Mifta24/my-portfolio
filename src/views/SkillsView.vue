@@ -210,6 +210,13 @@ export default {
       ],
       certifications: [
         {
+          name: "Microsoft Office Specialist: Excel Associate (Office 2019)",
+          icon: "fas fa-certificate",
+          issuer: "Microsoft",
+          date: "2026",
+          url: "https://drive.google.com/file/d/1bYmyoe0siNhapZCNHy8tIv1nVePdf7Ee/view?usp=sharing",
+        },
+        {
           name: "Alibaba Cloud Certifcation",
           icon: "fas fa-certificate",
           issuer: "Alibaba Cloud",
