@@ -35,7 +35,7 @@
         >
           <div class="project-image">
             <img
-              :src="require(`@/assets/${project.image}`)"
+              :src="getImageSrc(project.image)"
               :alt="project.title"
               class="project-img"
               @error="handleImageError"
@@ -338,6 +338,15 @@ export default {
         [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
       }
       return shuffled;
+    },
+    getImageSrc(image) {
+      // URL eksternal dipakai langsung, file lokal di-resolve dari assets
+      if (/^https?:\/\//.test(image)) return image;
+      try {
+        return require(`@/assets/${image}`);
+      } catch (e) {
+        return "https://via.placeholder.com/450x250?text=Project+Image";
+      }
     },
     handleImageError(e) {
       // Fallback untuk gambar yang tidak ditemukan

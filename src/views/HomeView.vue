@@ -4,7 +4,7 @@
       <div class="hero-content">
         <div class="hero-text">
           <h1>Miftahudin Aldi Saputra</h1>
-          <h2>IT Professional & Administrative Specialist</h2>
+          <h2>Fullstack Developer</h2>
           <p>
             Combining technical expertise with strong administrative skills to
             deliver efficient solutions in web development, data management, and

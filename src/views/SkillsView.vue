@@ -44,6 +44,18 @@
         </div>
 
         <div class="skill-category">
+          <h2><i class="fas fa-robot"></i> AI & Automation</h2>
+          <div class="skills-grid">
+            <div class="skill-item" v-for="skill in aiSkills" :key="skill.name">
+              <div class="skill-icon">
+                <i :class="skill.icon"></i>
+              </div>
+              <h3>{{ skill.name }}</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
           <h2><i class="fas fa-tools"></i> Tools & Technologies</h2>
           <div class="skills-grid">
             <div class="skill-item" v-for="tool in tools" :key="tool.name">
@@ -161,6 +173,17 @@ export default {
         { name: "SQLite", icon: "fas fa-database" },
         { name: "Supabase", icon: "fas fa-database" },
         { name: "REST APIs", icon: "fas fa-plug" },
+      ],
+      aiSkills: [
+        { name: "AI-Assisted Development", icon: "fas fa-magic" },
+        { name: "Claude Code", icon: "fas fa-terminal" },
+        { name: "GitHub Copilot", icon: "fab fa-github" },
+        { name: "Cursor", icon: "fas fa-i-cursor" },
+        { name: "Prompt Engineering", icon: "fas fa-comment-dots" },
+        { name: "LLM API Integration", icon: "fas fa-brain" },
+        { name: "AI Agents & Automation", icon: "fas fa-robot" },
+        { name: "n8n", icon: "fas fa-project-diagram" },
+        { name: "MCP", icon: "fas fa-plug" },
       ],
       tools: [
         { name: "Git", icon: "fab fa-git-alt" },

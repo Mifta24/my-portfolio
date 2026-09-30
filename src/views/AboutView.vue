@@ -19,7 +19,7 @@
         </div>
         <div class="profile-details">
           <h2>Miftahudin Aldi Saputra</h2>
-          <p class="subtitle">IT Professional & Administrative Specialist</p>
+          <p class="subtitle">Fullstack Developer</p>
           <p class="bio">
             I'm a dedicated professional with expertise in both technical and
             administrative domains. With proficiency in web development,
