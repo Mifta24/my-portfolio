@@ -1,0 +1,21 @@
+:root {
+  /* Colors */
+  --color-primary: #3498db;
+  --color-primary-dark: #2980b9;
+  --color-heading: #2c3e50;
+  --color-body: #333;
+  --color-text: #555;
+  --color-text-muted: #777;
+  --color-bg: #f8f9fa;
+  --color-surface: #fff;
+  --color-surface-alt: #f5f9fc;
+  --color-border: #e0e0e0;
+  --color-accent: #f39c12;
+
+  /* Effects */
+  --shadow-card: 0 5px 15px rgba(0, 0, 0, 0.05);
+  --transition-base: all 0.3s ease;
+
+  /* Layout */
+  --container-width: 1200px;
+}

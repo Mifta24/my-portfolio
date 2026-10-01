@@ -3,8 +3,8 @@
     <section class="hero">
       <div class="hero-content">
         <div class="hero-text">
-          <h1>Miftahudin Aldi Saputra</h1>
-          <h2>Fullstack Developer</h2>
+          <h1>{{ profile.name }}</h1>
+          <h2>{{ profile.title }}</h2>
           <p>
             Building modern, scalable web applications from database to user
             interface with Laravel, Vue.js, and REST APIs, accelerated by
@@ -20,7 +20,7 @@
           </div>
         </div>
         <div class="hero-image">
-          <img src="../assets/profile.jpg" alt="Miftahudin Aldi Saputra" />
+          <img :src="profileImage" :alt="profile.name" />
         </div>
       </div>
     </section>
@@ -55,37 +55,17 @@
     <section class="featured-projects">
       <h2>Featured Projects</h2>
       <div class="projects-grid">
-        <div class="project-card">
+        <div
+          class="project-card"
+          v-for="project in featuredProjects"
+          :key="project.id"
+        >
           <div class="project-image">
-            <img
-              src="../assets/mypengaduan-banner.jpg"
-              alt="MyPengaduan Mobile App"
-            />
+            <img :src="getImageSrc(project.image)" :alt="project.title" />
           </div>
           <div class="project-info">
-            <h3>MyPengaduan Mobile App</h3>
-            <p>
-              Citizen complaint mobile app built with Flutter and a Laravel API,
-              with real-time status tracking and push notifications.
-            </p>
-            <router-link to="/projects" class="project-link"
-              >View Details</router-link
-            >
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-image">
-            <img
-              src="../assets/law-office.png"
-              alt="Law Office Syarif & Partners"
-            />
-          </div>
-          <div class="project-info">
-            <h3>Law Office Syarif & Partners</h3>
-            <p>
-              Company profile website for a law office serving foreign
-              investors, with legal guides, a blog, and consultation booking.
-            </p>
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.description }}</p>
             <router-link to="/projects" class="project-link"
               >View Details</router-link
             >
@@ -102,8 +82,24 @@
 </template>
 
 <script>
+import profile from "@/data/profile";
+import projects from "@/data/projects";
+import profileImage from "@/assets/profile.jpg";
+import { getImageSrc } from "@/utils/image";
+
+const FEATURED_COUNT = 2;
+
 export default {
   name: "HomeView",
+  data() {
+    return {
+      profile,
+      profileImage,
+      // projects.js diurutkan dari yang paling baru, jadi ambil yang teratas
+      featuredProjects: projects.slice(0, FEATURED_COUNT),
+    };
+  },
+  methods: { getImageSrc },
 };
 </script>
 
@@ -133,20 +129,20 @@ export default {
 .hero-text h1 {
   font-size: 3rem;
   font-weight: 700;
-  color: #2c3e50;
+  color: var(--color-heading);
   margin-bottom: 1rem;
 }
 
 .hero-text h2 {
   font-size: 1.8rem;
   font-weight: 500;
-  color: #3498db;
+  color: var(--color-primary);
   margin-bottom: 1.5rem;
 }
 
 .hero-text p {
   font-size: 1.2rem;
-  color: #555;
+  color: var(--color-text);
   margin-bottom: 2rem;
   max-width: 500px;
 }
@@ -170,34 +166,6 @@ export default {
   margin-top: 1.5rem;
 }
 
-.btn {
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.btn-primary {
-  background-color: #3498db;
-  color: white;
-}
-
-.btn-primary:hover {
-  background-color: #2980b9;
-}
-
-.btn-secondary {
-  background-color: transparent;
-  color: #3498db;
-  border: 1px solid #3498db;
-}
-
-.btn-secondary:hover {
-  background-color: #3498db;
-  color: white;
-}
-
 /* Highlights Section */
 .highlights {
   display: flex;
@@ -212,7 +180,7 @@ export default {
   text-align: center;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-card);
   transition: transform 0.3s ease;
 }
 
@@ -222,18 +190,18 @@ export default {
 
 .highlight-card i {
   font-size: 2.5rem;
-  color: #3498db;
+  color: var(--color-primary);
   margin-bottom: 1rem;
 }
 
 .highlight-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #2c3e50;
+  color: var(--color-heading);
 }
 
 .highlight-card p {
-  color: #555;
+  color: var(--color-text);
 }
 
 /* Featured Projects */
@@ -245,7 +213,7 @@ export default {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: #2c3e50;
+  color: var(--color-heading);
 }
 
 .projects-grid {
@@ -259,7 +227,7 @@ export default {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-card);
   transition: transform 0.3s ease;
 }
 
@@ -290,16 +258,20 @@ export default {
 .project-info h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #2c3e50;
+  color: var(--color-heading);
 }
 
 .project-info p {
-  color: #555;
+  color: var(--color-text);
   margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .project-link {
-  color: #3498db;
+  color: var(--color-primary);
   text-decoration: none;
   font-weight: 500;
   position: relative;
@@ -312,7 +284,7 @@ export default {
   height: 2px;
   bottom: -3px;
   left: 0;
-  background-color: #3498db;
+  background-color: var(--color-primary);
   transition: width 0.3s ease;
 }
 
@@ -323,17 +295,6 @@ export default {
 .view-all {
   text-align: center;
   margin-top: 2rem;
-}
-
-.btn-outline {
-  background-color: transparent;
-  color: #3498db;
-  border: 2px solid #3498db;
-}
-
-.btn-outline:hover {
-  background-color: #3498db;
-  color: white;
 }
 
 /* Responsive Design */

@@ -1,25 +1,18 @@
 <template>
   <div class="about">
-    <section class="about-hero">
-      <div class="container">
-        <h1>About Me</h1>
-        <p class="lead">
-          Get to know who I am and what drives me as a developer
-        </p>
-      </div>
-    </section>
+    <PageHero
+      title="About Me"
+      lead="Get to know who I am and what drives me as a developer"
+    />
 
     <section class="about-content container">
       <div class="profile-section">
         <div class="profile-image">
-          <img
-            src="../assets/profile-about.jpg"
-            alt="Miftahudin Aldi Saputra"
-          />
+          <img src="../assets/profile-about.jpg" :alt="profile.name" />
         </div>
         <div class="profile-details">
-          <h2>Miftahudin Aldi Saputra</h2>
-          <p class="subtitle">Fullstack Developer</p>
+          <h2>{{ profile.name }}</h2>
+          <p class="subtitle">{{ profile.title }}</p>
           <p class="bio">
             I'm a Fullstack Developer who builds web and mobile applications end
             to end, from database design and backend APIs to responsive user
@@ -32,28 +25,28 @@
           <div class="personal-info">
             <div class="info-item">
               <span class="label">Name:</span>
-              <span>Miftahudin Aldi Saputra</span>
+              <span>{{ profile.name }}</span>
             </div>
             <div class="info-item">
               <span class="label">Email:</span>
               <span
-                ><a href="mailto:miftafree3@gmail.com"
-                  >miftafree3@gmail.com</a
-                ></span
+                ><a :href="`mailto:${profile.email}`">{{
+                  profile.email
+                }}</a></span
               >
             </div>
             <div class="info-item">
               <span class="label">Location:</span>
-              <span>Indonesia</span>
+              <span>{{ profile.location }}</span>
             </div>
             <div class="info-item">
               <span class="label">Availability:</span>
-              <span>Open to opportunities</span>
+              <span>{{ profile.availability }}</span>
             </div>
           </div>
           <div class="download-cv">
             <a
-              href="/cv.pdf"
+              :href="profile.cvUrl"
               target="_blank"
               rel="noopener"
               class="btn btn-primary"
@@ -143,39 +136,19 @@
 </template>
 
 <script>
+import PageHero from "@/components/PageHero.vue";
+import profile from "@/data/profile";
+
 export default {
   name: "AboutView",
+  components: { PageHero },
+  data() {
+    return { profile };
+  },
 };
 </script>
 
 <style scoped>
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.about-hero {
-  background-color: #f5f9fc;
-  padding: 4rem 0;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.about-hero h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  color: #2c3e50;
-  margin-bottom: 1rem;
-}
-
-.lead {
-  font-size: 1.3rem;
-  color: #555;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
 /* Profile Section */
 .profile-section {
   display: flex;
@@ -201,20 +174,20 @@ export default {
 
 .profile-details h2 {
   font-size: 2.2rem;
-  color: #2c3e50;
+  color: var(--color-heading);
   margin-bottom: 0.5rem;
 }
 
 .subtitle {
   font-size: 1.3rem;
-  color: #3498db;
+  color: var(--color-primary);
   margin-bottom: 1.5rem;
 }
 
 .bio {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #555;
+  color: var(--color-text);
   margin-bottom: 2rem;
 }
 
@@ -233,12 +206,12 @@ export default {
 
 .label {
   font-weight: 600;
-  color: #2c3e50;
+  color: var(--color-heading);
   margin-bottom: 0.25rem;
 }
 
 .info-item a {
-  color: #3498db;
+  color: var(--color-primary);
   text-decoration: none;
 }
 
@@ -250,26 +223,6 @@ export default {
   margin-top: 2rem;
 }
 
-.btn {
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.btn-primary {
-  background-color: #3498db;
-  color: white;
-}
-
-.btn-primary:hover {
-  background-color: #2980b9;
-}
-
 /* Experience Section */
 .experience-section {
   margin-bottom: 4rem;
@@ -278,7 +231,7 @@ export default {
 .experience-section h2,
 .interests-section h2 {
   font-size: 2rem;
-  color: #2c3e50;
+  color: var(--color-heading);
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -292,7 +245,7 @@ export default {
   position: absolute;
   height: 100%;
   width: 2px;
-  background-color: #e0e0e0;
+  background-color: var(--color-border);
   left: 20px;
   top: 0;
 }
@@ -306,7 +259,7 @@ export default {
 .timeline-marker {
   width: 40px;
   height: 40px;
-  background-color: #3498db;
+  background-color: var(--color-primary);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -323,24 +276,24 @@ export default {
 .timeline-content h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #2c3e50;
+  color: var(--color-heading);
 }
 
 .timeline-date {
   font-weight: 600;
-  color: #3498db;
+  color: var(--color-primary);
   margin-bottom: 0.25rem;
 }
 
 .timeline-company {
   font-weight: 500;
-  color: #555;
+  color: var(--color-text);
   margin-bottom: 0.75rem;
 }
 
 .timeline-description {
   line-height: 1.6;
-  color: #555;
+  color: var(--color-text);
 }
 
 /* Interests Section */
@@ -355,7 +308,7 @@ export default {
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-card);
   transition: transform 0.3s ease;
 }
 
@@ -365,13 +318,13 @@ export default {
 
 .interest-item i {
   font-size: 2.5rem;
-  color: #3498db;
+  color: var(--color-primary);
   margin-bottom: 1rem;
 }
 
 .interest-item h3 {
   font-size: 1.2rem;
-  color: #2c3e50;
+  color: var(--color-heading);
 }
 
 /* Responsive Design */
