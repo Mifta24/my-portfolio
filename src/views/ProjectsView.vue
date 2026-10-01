@@ -134,6 +134,61 @@ export default {
       itemsPerPage: 6, // Jumlah proyek per halaman
       projects: [
         {
+          id: 20,
+          title: "Law Office Syarif & Partners",
+          category: "Web Development",
+          description:
+            "A company profile website for a law office providing legal services to foreign investors, companies, and residents in Indonesia, covering visa and immigration (KITAS, KITAP), company setup (PT PMA), and business advisory. Includes a lawyer profile, legal guides, blog, consultation booking, and WhatsApp chat.",
+          technologies: ["Web"],
+          image: "law-office.png",
+          demoUrl: "https://law.fts-tech.co.id",
+          codeUrl: "#",
+        },
+        {
+          id: 19,
+          title: "Thai Travel",
+          category: "Web Application",
+          description:
+            "A transportation and tourism booking platform for Thailand, offering private airport transfers, hourly city car rentals, and curated tour packages. Features verified drivers, real-time flight tracking, and a membership loyalty points program.",
+          technologies: ["Web"],
+          image: "thai-travel.png",
+          demoUrl: "https://thai-travel.fts-tech.co.id/",
+          codeUrl: "#",
+        },
+        {
+          id: 18,
+          title: "FTS Hotel AI",
+          category: "Web Application",
+          description:
+            "A hotel guest platform with an AI concierge that welcomes visitors and helps them explore rooms, view facilities, plan reservations, and talk to hotel staff. Supports multiple languages (ID/EN/JA) with a voice toggle.",
+          technologies: ["AI"],
+          image: "hotel-ai.png",
+          demoUrl: "https://hotel-ai.fts-tech.co.id",
+          codeUrl: "#",
+        },
+        {
+          id: 16,
+          title: "FTS Menu",
+          category: "Web Application",
+          description:
+            "A digital menu platform for restaurants and cafes. Owners update prices, photos, descriptions, and availability from a dashboard, while customers scan a single QR code to see the latest menu. Includes tiered pricing plans and multi-language support.",
+          technologies: ["PHP", "Laravel", "PostgreSQL"],
+          image: "fts-menu.png",
+          demoUrl: "https://fts-menu.fts-tech.co.id",
+          codeUrl: "#",
+        },
+        {
+          id: 17,
+          title: "QRIS Self-Managed Payment System",
+          category: "Web API",
+          description:
+            "A centralized internal payment API for multiple projects. It creates invoices with unique codes, generates dynamic QRIS payloads using a custom TLV/CRC16 implementation, serves a public payment page, and lets admins confirm payments manually from a dashboard, with signed (HMAC) callbacks and full audit logs.",
+          technologies: ["PHP", "Laravel", "PostgreSQL", "Redis", "Filament"],
+          image: "qris-payment.png",
+          demoUrl: "https://qris-self-managed-payment-system.fts-tech.co.id/",
+          codeUrl: "#",
+        },
+        {
           id: 1,
           title: "Phone Match",
           category: "Web Development",
