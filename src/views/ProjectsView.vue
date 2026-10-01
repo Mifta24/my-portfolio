@@ -306,16 +306,13 @@ export default {
   },
   computed: {
     filteredProjects() {
-      let filtered;
+      // Urutan mengikuti susunan array projects (paling baru di atas)
       if (this.selectedCategory === "all") {
-        filtered = [...this.projects];
-      } else {
-        filtered = this.projects.filter(
-          (project) => project.category === this.selectedCategory
-        );
+        return [...this.projects];
       }
-      // Acak urutan proyek
-      return this.shuffleArray(filtered);
+      return this.projects.filter(
+        (project) => project.category === this.selectedCategory
+      );
     },
     paginatedProjects() {
       const start = (this.currentPage - 1) * this.itemsPerPage;
@@ -330,15 +327,6 @@ export default {
     },
   },
   methods: {
-    shuffleArray(array) {
-      // Fisher-Yates shuffle algorithm
-      const shuffled = [...array];
-      for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-      }
-      return shuffled;
-    },
     getImageSrc(image) {
       // URL eksternal dipakai langsung, file lokal di-resolve dari assets
       if (/^https?:\/\//.test(image)) return image;
