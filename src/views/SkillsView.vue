@@ -190,6 +190,8 @@ export default {
         { name: "GitHub", icon: "fab fa-github" },
         { name: "VS Code", icon: "fas fa-code" },
         { name: "Docker", icon: "fab fa-docker" },
+        { name: "Server Management", icon: "fas fa-server" },
+        { name: "VPS", icon: "fas fa-cloud" },
         { name: "Figma", icon: "fab fa-figma" },
         { name: "NPM", icon: "fab fa-npm" },
         { name: "Postman", icon: "fas fa-paper-plane" },

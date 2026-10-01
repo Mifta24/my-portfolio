@@ -4,7 +4,7 @@
       <div class="container">
         <h1>About Me</h1>
         <p class="lead">
-          Get to know who I am and what drives me as a professional
+          Get to know who I am and what drives me as a developer
         </p>
       </div>
     </section>
@@ -21,12 +21,13 @@
           <h2>Miftahudin Aldi Saputra</h2>
           <p class="subtitle">Fullstack Developer</p>
           <p class="bio">
-            I'm a dedicated professional with expertise in both technical and
-            administrative domains. With proficiency in web development,
-            database management, and MS Office suite, I combine technical skills
-            with strong organizational abilities to deliver efficient solutions.
-            I'm passionate about leveraging technology to streamline workflows
-            and solve complex problems.
+            I'm a Fullstack Developer who builds web and mobile applications end
+            to end, from database design and backend APIs to responsive user
+            interfaces. I work with Laravel, Vue.js, Flutter, and PostgreSQL,
+            and I deploy and manage my own projects on VPS servers. I also use
+            AI-assisted development and automation to ship faster, and I'm
+            passionate about turning complex problems into clean, reliable
+            solutions.
           </p>
           <div class="personal-info">
             <div class="info-item">
@@ -52,7 +53,9 @@
           </div>
           <div class="download-cv">
             <a
-              href="https://drive.google.com/file/d/13dnaha3AngJQkpKRhv26LwTchnNe1gCq/view?usp=sharing"
+              href="/cv.pdf"
+              target="_blank"
+              rel="noopener"
               class="btn btn-primary"
             >
               <i class="fas fa-download"></i> Download CV
@@ -92,9 +95,9 @@
               <p class="timeline-description">
                 Pursuing a degree in Software Engineering with a comprehensive
                 curriculum covering web development, mobile applications,
-                database management, and software design. Also developing strong
-                skills in data analysis, office productivity tools, and project
-                management to complement technical expertise.
+                database management, and software design. Applying it through
+                hands-on fullstack projects, from backend APIs and databases to
+                frontend interfaces and server deployment.
               </p>
             </div>
           </div>
@@ -126,16 +129,12 @@
             <h3>Coding</h3>
           </div>
           <div class="interest-item">
-            <i class="fas fa-gamepad"></i>
-            <h3>Gaming</h3>
+            <i class="fas fa-dumbbell"></i>
+            <h3>Sports</h3>
           </div>
           <div class="interest-item">
-            <i class="fas fa-music"></i>
-            <h3>Music</h3>
-          </div>
-          <div class="interest-item">
-            <i class="fas fa-mountain"></i>
-            <h3>Traveling</h3>
+            <i class="fas fa-book-open"></i>
+            <h3>Learning</h3>
           </div>
         </div>
       </div>
@@ -347,7 +346,7 @@ export default {
 /* Interests Section */
 .interests-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 

@@ -6,9 +6,9 @@
           <h1>Miftahudin Aldi Saputra</h1>
           <h2>Fullstack Developer</h2>
           <p>
-            Combining technical expertise with strong administrative skills to
-            deliver efficient solutions in web development, data management, and
-            office productivity.
+            Building modern, scalable web applications from database to user
+            interface with Laravel, Vue.js, and REST APIs, accelerated by
+            AI-assisted development and automation.
           </p>
           <div class="cta-buttons">
             <router-link to="/projects" class="btn btn-primary"
@@ -28,26 +28,26 @@
     <section class="highlights">
       <div class="highlight-card">
         <i class="fas fa-laptop-code"></i>
-        <h3>Technical Skills</h3>
+        <h3>Frontend & Backend</h3>
         <p>
-          Proficient in web development, database management, IT support, and
-          technical problem-solving.
+          Proficient in Vue.js, Tailwind CSS, Laravel, PHP, and REST API
+          development for responsive, full-stack web applications.
         </p>
       </div>
       <div class="highlight-card">
-        <i class="fas fa-file-alt"></i>
-        <h3>Administrative Excellence</h3>
+        <i class="fas fa-database"></i>
+        <h3>Database & Server Management</h3>
         <p>
-          Expert in MS Office Suite, document management, data entry, and office
-          productivity tools.
+          Experienced with MySQL, PostgreSQL, Supabase, Docker, and VPS server
+          management for reliable data handling and smooth deployments.
         </p>
       </div>
       <div class="highlight-card">
-        <i class="fas fa-chart-line"></i>
-        <h3>Data Analysis</h3>
+        <i class="fas fa-robot"></i>
+        <h3>AI & Automation</h3>
         <p>
-          Skilled in data processing, spreadsheet analysis, reporting, and data
-          visualization.
+          Skilled in AI-assisted development, LLM API integration, and workflow
+          automation with n8n and MCP.
         </p>
       </div>
     </section>
@@ -57,13 +57,16 @@
       <div class="projects-grid">
         <div class="project-card">
           <div class="project-image">
-            <img src="../assets/phone_match.jpeg" alt="Project 1" />
+            <img
+              src="../assets/mypengaduan-banner.jpg"
+              alt="MyPengaduan Mobile App"
+            />
           </div>
           <div class="project-info">
-            <h3>Phone Match</h3>
+            <h3>MyPengaduan Mobile App</h3>
             <p>
-              Smartphone recommendation system using the TOPSIS method with
-              Tailwind CSS and Laravel Fullstack.
+              Citizen complaint mobile app built with Flutter and a Laravel API,
+              with real-time status tracking and push notifications.
             </p>
             <router-link to="/projects" class="project-link"
               >View Details</router-link
@@ -72,13 +75,16 @@
         </div>
         <div class="project-card">
           <div class="project-image">
-            <img src="../assets/Mistify.png" alt="Project 2" />
+            <img
+              src="../assets/law-office.png"
+              alt="Law Office Syarif & Partners"
+            />
           </div>
           <div class="project-info">
-            <h3>Parfume Shop</h3>
+            <h3>Law Office Syarif & Partners</h3>
             <p>
-              A perfume store website built using bootstrap and laravel and
-              equipped with a payment gateway
+              Company profile website for a law office serving foreign
+              investors, with legal guides, a blog, and consultation booking.
             </p>
             <router-link to="/projects" class="project-link"
               >View Details</router-link
