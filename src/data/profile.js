@@ -11,7 +11,7 @@ const profile = {
   cvUrl: "/cv.pdf",
   socials: {
     github: "https://github.com/Mifta24",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/miftahudin-aldi-saputra",
     twitter: "https://x.com/MiftaAldi24?t=hkYF19hu2v1wSUtGWoGCOg&s=09",
     instagram:
       "https://www.instagram.com/mifta_xh_ui?utm_source=qr&igsh=OXZyb3pibDJmOXcw",
