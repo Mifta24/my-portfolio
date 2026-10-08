@@ -6,7 +6,7 @@ const profile = {
   email: "miftafree3@gmail.com",
   phone: "+62 838-9327-1424",
   phoneHref: "tel:+6283893271424",
-  location: "Indonesia",
+  location: "Tangerang, Indonesia",
   availability: "Open to opportunities",
   cvUrl: "/cv.pdf",
   socials: {

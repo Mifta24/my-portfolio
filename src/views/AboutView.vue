@@ -14,13 +14,14 @@
           <h2>{{ profile.name }}</h2>
           <p class="subtitle">{{ profile.title }}</p>
           <p class="bio">
-            I'm a Fullstack Developer who builds web and mobile applications end
-            to end, from database design and backend APIs to responsive user
-            interfaces. I work with Laravel, Vue.js, Flutter, and PostgreSQL,
-            and I deploy and manage my own projects on VPS servers. I also use
-            AI-assisted development and automation to ship faster, and I'm
-            passionate about turning complex problems into clean, reliable
-            solutions.
+            I'm a Full-Stack Developer who builds end-to-end web and mobile
+            applications, from database design and backend APIs to responsive
+            user interfaces. I work with Laravel, Vue.js, Flutter, and
+            MySQL/PostgreSQL, and I deploy and manage projects with Docker on
+            VPS servers. I also use AI-assisted development, LLM API
+            integration, workflow automation, and MCP to deliver clean, reliable
+            solutions faster, and I'm passionate about turning complex problems
+            into products people can rely on.
           </p>
           <div class="personal-info">
             <div class="info-item">
@@ -60,57 +61,80 @@
       <div class="experience-section">
         <h2>Experience & Education</h2>
         <div class="timeline">
-          <!-- <div class="timeline-item">
+          <div class="timeline-item">
             <div class="timeline-marker">
               <i class="fas fa-briefcase"></i>
             </div>
             <div class="timeline-content">
-              <h3>Web Developer</h3>
-              <p class="timeline-date">2022 - Present</p>
-              <p class="timeline-company">Company Name</p>
-              <p class="timeline-description">
-                Working with various web technologies to build and maintain
-                responsive websites and web applications. Collaborating with
-                designers and other developers to create seamless user
-                experiences.
+              <h3>Full-Stack Developer</h3>
+              <p class="timeline-date">February 2026 - Present</p>
+              <p class="timeline-company">
+                PT Fujiayama Technology Solutions (Neo Soho Apart)
               </p>
+              <ul class="timeline-description">
+                <li>
+                  Develop Laravel-based web systems with booking, membership,
+                  inventory, vouchers/QR codes, reviews, notifications, payment,
+                  vendor management, and automated testing.
+                </li>
+                <li>
+                  Built and improved the multi-tenant FTS Menu SaaS with
+                  onboarding, subscriptions, QRIS payments, analytics,
+                  multilingual UI, tenant isolation, security hardening, and
+                  admin dashboards.
+                </li>
+                <li>
+                  Integrate AI and API features using OpenRouter and local LLMs,
+                  including chatbot flows, business knowledge, multilingual AI
+                  Concierge, and secure website-to-model connectivity.
+                </li>
+              </ul>
             </div>
-          </div> -->
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>Full-Stack Developer Intern</h3>
+              <p class="timeline-date">August 2025 - February 2026</p>
+              <p class="timeline-company">
+                PT Fujiayama Technology Solutions (Neo Soho Apart)
+              </p>
+              <ul class="timeline-description">
+                <li>
+                  Developed and tested REST APIs for a tire reservation system,
+                  including authentication, reservations, users, admin
+                  endpoints, validation, and file uploads.
+                </li>
+                <li>
+                  Contributed to debugging, API documentation, Git-based
+                  collaboration, database/project migration, and deployment
+                  testing.
+                </li>
+                <li>
+                  Built supporting features for FTS Stock and Flutter/Firebase
+                  notifications, including models, seeders, search/filter, and
+                  queue worker deployment.
+                </li>
+              </ul>
+            </div>
+          </div>
 
           <div class="timeline-item">
             <div class="timeline-marker">
               <i class="fas fa-graduation-cap"></i>
             </div>
             <div class="timeline-content">
-              <h3>Software Engineering Degree</h3>
-              <p class="timeline-date">2022 - Present</p>
-              <p class="timeline-company">Global Institute Tangerang</p>
-              <p class="timeline-description">
-                Pursuing a degree in Software Engineering with a comprehensive
-                curriculum covering web development, mobile applications,
-                database management, and software design. Applying it through
-                hands-on fullstack projects, from backend APIs and databases to
-                frontend interfaces and server deployment.
+              <h3>Bachelor's Degree in Informatics Engineering</h3>
+              <p class="timeline-date">2022 - 2026</p>
+              <p class="timeline-company">
+                Bina Sarana Global Institute of Technology and Business
               </p>
+              <p class="timeline-description">Software Engineering.</p>
             </div>
           </div>
-
-          <!-- <div class="timeline-item">
-            <div class="timeline-marker">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <div class="timeline-content">
-              <h3>Internship</h3>
-              <p class="timeline-date">2021</p>
-              <p class="timeline-company">Internship Company</p>
-              <p class="timeline-description">
-                Worked on real-world projects that involved designing and
-                developing web applications. Gained practical experience in
-                working with development teams and understanding business
-                requirements.
-              </p>
-            </div>
-          </div> -->
         </div>
       </div>
 
@@ -294,6 +318,14 @@ export default {
 .timeline-description {
   line-height: 1.6;
   color: var(--color-text);
+}
+
+ul.timeline-description {
+  padding-left: 1.25rem;
+}
+
+ul.timeline-description li + li {
+  margin-top: 0.5rem;
 }
 
 /* Interests Section */
